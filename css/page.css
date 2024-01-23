@@ -1,0 +1,38 @@
+.Section_top{
+    
+    background-image: url(image/a.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s infinite ease-in-out;
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(image/a.jpg);
+    }
+    30%
+    {
+        background-image: url(image/h.jpg);
+    }
+    60%
+    {
+        background-image: url(image/g.jpg);
+    }
+    90%
+    {
+        background-image: url(image/2.jpg);
+    }
+    120%
+    {
+        background-image: url(image/e.jpg);
+    }
+    140%
+    {
+        background-image: url(image/f.jpg);
+    }
+    
+}

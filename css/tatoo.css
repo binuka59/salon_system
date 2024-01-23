@@ -1,0 +1,38 @@
+.tatoo_top{
+    
+    background-image: url(image/tatto1.jpg);
+    background-position: 30%;
+    background-repeat: no-repeat;
+    background-size:100%;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s infinite ease-in-out;
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(image/tatto1.jpg);
+    }
+    30%
+    {
+        background-image: url(image/tatto4.jpg);
+    }
+    60%
+    {
+        background-image: url(image/tatto2.jpg);
+    }
+    90%
+    {
+        background-image: url(image/tatto6.jpg);
+    }
+    120%
+    {
+        background-image: url(image/tatto3.png);
+    }
+    140%
+    {
+        background-image: url(image/tatto4.png);
+    }
+    
+}

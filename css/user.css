@@ -1,0 +1,368 @@
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+ 
+html::-webkit-scrollbar{
+    width: .6rem;
+}
+ 
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+ 
+html::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+}
+ 
+section{
+    padding: 5rem 7%;
+}
+
+.heading{
+   text-align: center;
+  
+   text-transform: capitalize;
+   margin-bottom: 3rem;
+   font-size: 4rem;
+   margin-top: 4rem;
+}
+ 
+
+.message{
+    display: block;
+    background:rgb(248, 92, 92);
+    padding:1.5rem 1rem;
+    font-size: 3rem;
+    color:var(--black);
+    margin-bottom: 5rem;
+    text-align: center;
+ }
+ 
+
+/* ------------------------------------------------------------------header -----------------------------------------------------------*/
+
+.header{
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:10; left:10; right:10;
+    z-index: 1000;
+    width: 100%;
+}
+ 
+
+
+.header .navbar #close-navbar {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: rgb(255, 16, 16);
+    display: none;
+    
+  }
+ 
+.header .navbar a{
+    font-size: 2.2rem;
+    margin-left:4rem;
+    color:rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-weight: bolder;
+   
+}
+
+.header .navbar a i{
+    position: relative;  
+}
+
+
+.header .navbar a span{
+    position: absolute;
+    display:flex;
+    top:2rem;
+    right:16.5rem;
+    padding:1px 7px 6px;
+    border-radius: 40%;
+    background: red;
+    color: white;
+    align-items:center;
+    text-align: center;
+    border-radius:50%;
+    width:3rem;
+ 
+}
+.header .navbar a span:hover{
+  
+    color:black;
+     background: rgb(255, 255, 255);  
+}
+
+
+
+
+.header .navbar a.logi{
+    font-size: 2.2rem;
+    margin-left:8rem;
+    color:rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-weight: bolder;
+    
+}
+
+
+
+ 
+ .header .navbar a:hover{
+    color:navajowhite;
+    text-decoration: underline;
+    
+ }
+ 
+ .header .navbar a i:hover{
+    color:navajowhite;
+  
+    
+ }
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.header .shopping-cart{
+    position: absolute;
+    display: inline-block;
+    top:-500%; right:5%;
+    margin-top: 5rem;
+    padding:1rem;
+    border-radius:1rem;
+    box-shadow: var(--box-shadow);
+    width:35rem;
+    background: wheat;
+    
+}
+
+.header .shopping-cart.active{
+    top:7rem;
+    transition: 0.00s ;
+   
+}
+.header .shopping-cart h3{
+    bottom: 10rem;
+   color:rgb(255, 255, 255);
+   font-size: 2.2rem;
+   font-family: 'Rubik', sans-serif;
+   margin-top: 1rem;
+   margin-left: 1rem;
+   margin-bottom: 2rem;
+   text-transform: capitalize;
+   text-decoration: dotted;
+   background:rgb(92, 92, 91);
+   
+}
+
+.header .shopping-cart .price a{
+    color: rgb(80, 67, 67);
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 2rem;
+    
+}
+.header .shopping-cart .price a:hover{
+    color: rgb(165, 134, 67);
+    font-size: 2rem;
+    
+    
+}
+.header .shopping-cart .price i{
+    color: rgb(95, 91, 78);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+   
+    
+}
+.header .shopping-cart .price i:hover{
+    color: rgb(173, 152, 106);
+    font-size: 2rem;
+    
+}
+
+
+
+/*---------------------------------------------profile--------------------------------------------------------------------------------*/
+
+.header.profile{
+    position: absolute;
+    top:1%; right:1rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    border-radius: .5rem;
+    padding:2rem;
+    text-align: center;
+    background: red;
+    width: 48rem;
+    display: none;
+    animation: fadeIn .2s linear;
+ }
+
+ .header.profile.active{
+    display: inline-block;
+ }
+ 
+ .header.profile img{
+    height: 15rem;
+    width: 15rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+ 
+ .header.profile p{
+    padding:.5rem 0;
+    font-size: 2.5rem;
+    color:whitesmoke;
+ }
+
+
+
+.header.login-form{
+    
+    position: absolute;
+    display: inline-block;
+    top:-10%; right:5%;
+    padding:1rem;
+    border-radius:1rem;
+    box-shadow: var(--box-shadow);
+    width:35rem;
+    background: whitesmoke;
+ 
+}
+
+.header .login-form.active{
+    right:2rem;
+    transition: .4s linear;
+}
+
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    padding:1rem;
+}
+.header .login-form h4{
+    font-size: 2rem;
+    color: rgb(166, 255, 0);
+    padding:1rem;
+}
+.header .login-form p{
+    font-size: 1.5rem;
+    color: darkslateblue;
+}
+
+.header .login-form .box{
+    width: 100%;
+    margin:.7rem 0;
+   
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.header .login-form p{
+    font-size: 1.4rem;
+    padding:.5rem 0;
+    color:var(--light-color);
+}
+
+.header .login-form p a{
+    color:var(--orange);
+    text-decoration: underline;
+	
+}
+
+
+
+
+ 
+
+
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+     }
+
+    .header .navbar a {
+        font-size: 1.7rem;
+    }
+  
+     section{
+        padding:3rem 2rem;
+     }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+     .header .navbar {
+        position: fixed;
+        top: 0;
+        right: -105%;
+        width: 30rem;
+        background: var(--white);
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        z-index: 1200;
+      }
+      .header .navbar #close-navbar {
+        display: block;
+      }
+      .header .navbar.active {
+        right: 0;
+      }
+      
+      .header .navbar a {
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 3rem;
+      }
+
+    .home .content h3{
+        font-size: 5.5rem;
+    }
+
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+}

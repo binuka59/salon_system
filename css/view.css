@@ -1,0 +1,371 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+   --green:wheat;
+   --black:rgb(247, 238, 238);
+   --white:#fff;
+   --bg-color:rgb(123, 123, 120);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --border:.1rem solid var(--black);
+   background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.3)),url(image/o\ \(2\).jpg);
+   --border:.2rem solid var(--black);
+   --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+   --border:.2rem solid rgba(0,0,0,.1);
+   --outline:.1rem solid rgba(0,0,0,.1);
+   --outline-hover:.2rem solid black;
+
+}
+
+*{
+    
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:var(--black);
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+    
+ }
+
+ section{
+    padding:3rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+ }
+ 
+ .disabled{
+    user-select: none;
+    pointer-events: none;
+    opacity: .5;
+ }
+
+.appoint-display  h3{
+   text-align: center;
+   padding:.2rem 0;
+   font-size: 3.1rem;
+   color:whitesmoke;
+   margin-left: 50rem;
+   margin-top: 3rem;
+   
+}
+.appoint-display  h4{
+    
+   color:rgb(255, 255, 255);
+   margin-top:1.5rem;
+   margin-bottom:3rem;
+   margin-left:10rem;
+   font-size: 2.5rem;
+}
+
+
+
+
+.appoint-display  h3 span{
+   background:rgb(245, 215, 158);
+   color:rgb(0, 0, 0);
+   display: inline-block;
+   padding:.5rem 3rem;
+   clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+   border:3px solid rgb(255, 255, 255);
+   margin-bottom: 3rem;
+
+}
+.appoint-display form h5{
+   color: blue;
+   font-size:2.5rem;
+   text-align: center;
+   
+}
+
+.appoint-display
+{
+   margin:5rem -2;
+}
+
+.appoint-display .display-table{
+   width: 90%;
+   margin-left:6rem;
+   text-align: center;
+   border-radius: 1rem;
+   
+}
+.appoint-display .display-table tbody{
+    background: lightsteelblue;
+    border-radius: 1rem;
+ }
+
+
+.appoint-display .display-table th{
+   padding:1rem;
+   font-size: 2.5rem;
+   color:rgb(0, 0, 0);
+   font-style: bold;
+   border-radius: 1rem;
+  
+   
+}
+.appoint-display .display-table .topic{
+   padding:1rem;
+   font-size: 2rem;
+   background:antiquewhite;
+   color: rgb(0, 0, 0);
+   border-radius: 1rem;
+   
+    
+ }
+ .appoint-display .display-table .cols{
+   padding-top: 2rem;
+   font-style: bold;
+   background:rgb(135, 125, 106);
+   color: #ffffff;
+  
+   
+}
+
+
+.appoint-display .display-table td{
+   padding:1rem;
+   font-size: 2.5rem;
+   color:rgb(0, 0, 0);
+   font-style: bold;
+   border-radius: 1rem;
+}
+
+.appoint-display .display-table td a{
+   padding:1rem;
+   font-size: 2.5rem;
+   color:rgb(0, 0, 0);
+   font-style: bold;
+   border-radius: 1rem;
+}
+.appoint-display .display-table tr:nth-child(even) {
+    background-color:rgb(151, 156, 159) ; /* Change this color to your desired stripe color */
+    
+  }
+.appoint-display .display-table tr:nth-child(even):hover{
+    background-color:wheat; /* Change this color to your desired stripe color */
+    
+    
+  }
+  
+.appoint-display .display-table tr:nth-child(odd) {
+    background-color:whitesmoke; 
+  }
+.appoint-display .display-table tr:nth-child(odd):hover {
+    background-color:rgb(195, 225, 242)  ;
+  }
+ 
+
+
+.appoint-display .product-table{
+    margin-top: 5rem;
+    width: 90%;
+    margin-left:6rem;
+    text-align: center;
+    border-radius: 1rem;
+  
+ }
+ 
+ 
+  
+  .appoint-display .product-table th{
+    width:49rem;
+    padding:2rem;
+    font-size: 2.2rem;
+    color:rgb(0, 0, 0);
+    font-style: bold;
+    border-radius: 1rem;
+   
+    
+ }
+ 
+  .appoint-display .product-table td{
+    padding:1rem;
+    font-size: 2.5rem;
+    color:rgb(255, 2, 2);
+    background: #ff0000;
+    font-style: bold;
+     width:40rem;
+     border-radius: 1rem;
+ }
+
+ .appoint-display .product-table td .fom{
+    padding:.5rem;
+    font-size: 2.2rem;
+    color:rgb(0, 0, 0);
+    background-color:wheat; 
+    font-style: bold;
+    width:40rem;
+ }
+ .appoint-display .product-table td .fom option{
+    padding:.5rem;
+    font-size: 2.2rem;
+    color:rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255); 
+    font-style: bold;
+    width:40rem;
+ }
+
+ .appoint-display .product-table td .fomr{
+    padding:1rem;
+    font-size: 2.2rem;
+    color:rgb(0, 0, 0);
+    background-color:wheat; 
+    font-style: bold;
+    width:40rem;
+    margin-left:-10rem;
+   
+ }
+
+ 
+ .appoint-display .product-table .btn{
+    margin-top: 2rem;
+    background: wheat;
+    width:50rem;
+    text-align: center;
+    color: black;
+    margin-left:29rem;
+    padding:1.5rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    border:3px solid rgb(255, 255, 255);
+    
+ }
+
+ .appoint-display .product-table .btn:hover{
+   border:3px solid rgb(255, 255, 255);
+   background: lightslategrey;
+   color: rgb(0, 0, 0);
+   transition: 1s;
+    
+ }
+
+
+.appoint-display .product-table td:nth-child(even) {
+   background-color:wheat;  /* Change this color to your desired stripe color */
+     
+   }
+
+   
+.appoint-display .product-table td:nth-child(odd) {
+     background:lightgray;
+     color: rgb(0, 0, 0);
+   }
+   
+ /*---------------------------------------------------------*/
+
+ 
+ 
+
+ .appoint-display .invoice-table{
+   margin-top: 3rem;
+   width: 90%;
+   margin-left:6rem;
+   text-align: center;
+   border-radius: 1rem;
+   
+}
+.appoint-display .invoice-table .topic{
+   padding:1rem;
+   font-size:3rem;
+   color:ghostwhit;
+   font-style: bold;
+   background:rgb(135, 125, 106);
+  
+   
+}
+.appoint-display .invoice-table thead th{
+   padding:1rem;
+    font-size: 2rem;
+    background:antiquewhite;
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+}
+.appoint-display .invoice-table tbody{
+    background: lightsteelblue;
+    border-radius: 1rem;
+ }
+
+
+.appoint-display .invoice-table th{
+   padding:1rem;
+   font-size: 2.5rem;
+   color:rgb(0, 0, 0);
+   font-style: bold;
+   border-radius: 1rem;
+  
+   
+}
+.appoint-display .invoice-table .topic{
+    padding:1rem;
+    font-size:3rem;
+    color:ghostwhit;
+    font-style: bold;
+    background:rgb(135, 125, 106);
+   
+    
+ }
+
+
+.appoint-display .invoice-table td{
+   padding:1rem;
+   font-size: 2.5rem;
+   color:rgb(0, 0, 0);
+   font-style: bold;
+   border-radius: 1rem;
+   
+}
+.appoint-display .invoice-table tr:nth-child(even) {
+    background-color:rgb(151, 156, 159) ; /* Change this color to your desired stripe color */
+    
+  }
+.appoint-display .invoice-table tr:nth-child(even):hover{
+    background-color:wheat; /* Change this color to your desired stripe color */
+    
+    
+  }
+  
+.appoint-display .invoice-table tr:nth-child(odd) {
+    background-color:whitesmoke; 
+  }
+.appoint-display .invoice-table tr:nth-child(odd):hover {
+    background-color:rgb(195, 225, 242)  ;
+  }
+
+.appoint-display i{
+   color: red;
+   background: #fff;
+   font-size: 2.6rem;
+   padding: 2rem;
+   width:30rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   margin-left: 80rem;
+   border-radius: 1rem;
+   border:3px solid wheat;
+  
+}
+.appoint-display i span{
+   color: rgb(255, 0, 0);
+   font-size: 2rem;
+}
+.appoint-display i:hover{
+   color: rgb(0, 0, 0);
+   background: #ff0000;
+   transition: 3s; 
+}
+.appoint-display i span:hover{
+   color: rgb(0, 0, 0);
+  
+  
+}
+ 

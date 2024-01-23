@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+ --orange:orange;
+ --red:#e74c3c;
+ --black:black;
+ --white:white;
+ --light-bg:#f6f6f6;
+ --border:.2rem solid var(--black);
+--box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+--border:.2rem solid rgba(0,0,0,.1);
+--outline:.1rem solid rgba(0,0,0,.1);
+--outline-hover:.2rem solid black;
+
+
+
+}
+
+*{
+    
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:var(--black);
+    transition: all .2s linear;
+    
+
+}
+
+/*-------------------------------------------------------------time--------------------------------------------------------------------*/
+
+
+ html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+    
+ }
+
+ section{
+    padding:3rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+ }
+ 
+ .disabled{
+    user-select: none;
+    pointer-events: none;
+    opacity: .5;
+ }
+
+ .approve-btn{
+   display: block;
+   width: 100%;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   color:black;
+   font-size: 2rem;
+   padding:1.3rem 3rem;
+   text-transform: capitalize;
+   cursor: pointer;
+   text-align: center;
+   background-color: darkgoldenrod;
+}
+
+ 
+ .btn,
+ .viewbtn,
+ .delete-btn,
+ .update-btn,
+ .about-btn,
+ .option-btn{
+    display: block;
+    width: 100%;
+    margin-top: 0rem;
+    border-radius: .5rem;
+    color:var(--white);
+    font-size: 2rem;
+    padding:1.3rem 3rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .btn{
+    background-color: Orange;
+ }
+
+ .about-btn{ 
+    background-color:rgb(79, 78, 76); 
+ }
+
+ .about-btn:hover{
+
+    background-color:whitesmoke;
+    color: black; 
+ }
+ .approve-btn:hover{
+
+   background-color:dimgray;
+   color: whitesmoke; 
+}
+
+
+ .update-btn
+{
+
+    background-color:lightslategray; 
+ }
+ 
+ .update-btn:hover{
+
+    background-color:gray;
+    color: black; 
+ }
+
+ .delete-btn{
+    background-color: darkred;
+ }
+ 
+ .option-btn{
+    background-color:darkred;
+ }
+ 
+ .btn:hover,
+ .delete-btn:hover,
+ .option-btn:hover{
+    background-color: gray;
+ }
+ 
+ .flex-btn{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+ }
+ 
+ .flex-btn > *{
+    flex:1;
+ }
+
+ /* edit title*/
+.title{
+
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color:lightslategray;
+    font-size: 3.5rem;
+
+}
+
+.title span{
+
+    
+    
+    
+    color:orange;
+    font-size: 3.5rem;
+
+}
+
+
+
+.heading{
+   text-align: center;
+   padding:.2rem 0;
+   font-size: 3.5rem;
+   color:whitesmoke;
+   margin-left: 50rem;
+}
+
+.heading span{
+   background:wheat;
+   color:rgb(0, 0, 0);
+   display: inline-block;
+   padding:.5rem 3rem;
+   clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+
+
+.message{
+    position: sticky;
+    top:0;
+    max-width: 1200px;
+    margin:0 auto;
+    background-color:orangered;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1.5rem;
+    z-index: 10000;
+ }
+ 
+ .message span{
+    font-size: 2rem;
+    color:black;
+    text-align: right;
+ }
+ 
+ .message i{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color:whitesmoke;
+ }
+ 
+ .message i:hover{
+    color:white;
+ }
+
+ .empty{
+    padding:1.5rem;
+    background: var(--white);
+    color:var(--red);
+    border-radius: .5rem;
+    border:var(--border);
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    text-transform: capitalize;
+ }
+ 
+ @keyframes fadeIn {
+    0%{
+       transform: translateY(1rem);
+    }
+ }
+ 
+
+ 
+
+
+
+
+
+
+ 
+ /* media queries  */
+
+@media (max-width:991px){
+
+    html{
+       font-size: 55%;
+    }
+    
+ }
+ 
+ @media (max-width:768px){
+ 
+    #menu-btn{
+       display: inline-block;
+    }
+ 
+ 
+ 
+    .update-profile form .flex{
+       flex-wrap: wrap;
+       gap:0;
+    }
+ 
+    .update-profile form .flex .inputBox{
+       width: 100%;
+    }
+ 
+ }
+ 
+ @media (max-width:450px){
+ 
+    html{
+       font-size: 50%;
+    }
+ 
+    .flex-btn{
+       flex-flow: column;
+       gap:0;
+    }
+ 
+    .title{
+       font-size: 3rem;
+    }
+    
+ }

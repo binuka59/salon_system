@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+ --orange:orange;
+ --red:#e74c3c;
+ --black:black;
+ --white:white;
+ --light-bg:#f6f6f6;
+ --border:.2rem solid var(--black);
+--box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+--border:.2rem solid rgba(0,0,0,.1);
+--outline:.1rem solid rgba(0,0,0,.1);
+--outline-hover:.2rem solid black;
+   background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.3)),url(image/foto15.jpg);
+
+}
+*{
+    
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+   color:var(--black);
+   transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+    
+ }
+
+ section{
+    padding:3rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+ }
+ 
+ .disabled{
+    user-select: none;
+    pointer-events: none;
+    opacity: .5;
+ }
+
+.message{
+    display: block;
+    background: var(--bg-color);
+    padding:1.5rem 1rem;
+    font-size: 2rem;
+    color:var(--black);
+    margin-bottom: 2rem;
+    text-align: center;
+ }
+ .edit-btn
+ {
+    display: block;
+    width:15rem;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   background:gray;
+   color:white;
+   font-size: 2rem;
+   padding:.7rem 1rem;
+   text-transform: capitalize;
+   cursor: pointer;
+   text-align: center;
+   border:2px solid rgb(0, 0, 0);
+ }
+ .edit-btn:hover
+ {
+    color: black;
+    background: white;
+    border: 2px solid sandybrown;
+    transition: 1s;
+ }
+ 
+ /*--------------------------------------------------------product display-----------------------------------------------------*/
+ .product-display{
+    margin:5rem -2;
+ 
+ }
+ 
+ .product-display h3{
+    text-align: center;
+    padding:.2rem 0;
+    font-size: 3.1rem;
+    color:whitesmoke;
+    margin-left: 50rem;
+    margin-top: 3rem;
+ }
+ 
+ 
+ .product-display h3 span{
+    background:rgb(245, 215, 158);
+    color:rgb(0, 0, 0);
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    border:3px solid rgb(255, 255, 255);
+    margin-bottom: 3rem;
+ 
+ }
+ .product-display .product-display-table{
+    width: 95%;
+    text-align: center;
+    align-items: center;
+    margin-left:4rem;
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+ }
+ 
+ .product-display .product-display-table tbody{
+    background: rgb(255, 255, 255);
+ }
+ 
+ .product-display .product-display-table th{
+    padding:1rem;
+    font-size: 2rem;
+    background:antiquewhite;
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+
+    
+ }
+ 
+ 
+ .product-display .product-display-table td{
+    padding:1rem;
+    font-size: 2.2rem;
+    color:black;
+    font-style: bold;
+    border-radius: .4rem;
+ }
+ 
+ .product-display .product-display-table tr:nth-child(even) {
+    background-color:rgb(151, 156, 159) ; /* Change this color to your desired stripe color */
+    
+  }
+  .product-display .product-display-table tr:nth-child(even):hover{
+    background-color:wheat; /* Change this color to your desired stripe color */
+    
+    
+  }
+  
+  .product-display .product-display-table tr:nth-child(odd) {
+    background-color:whitesmoke; 
+  }
+  .product-display .product-display-table tr:nth-child(odd):hover {
+    background-color:rgb(195, 225, 242) ;
+  }
+ 
+ .product-display .product-display-table .btn:first-child{
+    margin-top: 0;
+ }
+ 
+ .product-display .product-display-table .btn:last-child{
+    background: rgb(213, 48, 81);
+    color: bisque;
+ }
+ .product-display .product-display-table .btn:last-child:hover{
+    background: rgb(66, 65, 66);
+    color:whitesmoke;
+ }

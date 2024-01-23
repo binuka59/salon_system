@@ -1,0 +1,111 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;700;800&display=swap');
+/*---------------VARIABLES CSS-------------------*/
+:root {
+    --header-height: 6.25rem;
+
+    /*---------------COLLORS -------------------*/
+    --main-color: #f7e6df;
+    --first-color: #75492b;
+    --second-color: #dfd6a7;
+    --white-color: #ffffff;
+    --black-color: #151515;
+
+    /*---------------FONT  AND TYPOGRAPHY-------------------*/
+    --font-cursive: 'Great Vibes', cursive;
+    --body-font: 'Montserrat', sans-serif;
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.813rem;
+
+    /*---------------FONT WEIGHT-------------------*/
+    --font-light: 300;
+    --font-medium: 400;
+    --font-semi-bold: 700;
+    --font-bold: 800;
+
+    
+}
+/* base */
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section{
+    padding: calc(var(--header-height) + 20px) 0;
+}
+.section__title{
+    margin: 0 auto;
+    text-align: center;
+}
+.section__title h1{
+    font-family: var(--font-cursive);
+    font-size: var(--big-font-size);
+    font-weight: var(--font-medium);
+    line-height: var(--big-font-size);
+    color: var(--first-color);
+}
+.section__title span{
+    font-weight: var(--font-light);
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-font-size);
+    color: var(--black-color);
+}
+
+
+
+
+
+/* ------------------------------------------------GALLERY------------------------------------ */
+.gallery{
+    width: 100%;
+    position: relative;
+}
+.gallery::before{
+    content: "";
+    width: 100%;
+    height: 60%;
+    background-color: lightgray;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: -1;
+}
+.gallery__list__img{
+   
+    justify-content: center;
+   max-height: 10px;
+    max-width: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0rem, 10fr));
+    gap:2rem;
+}
+.gallery__img img{
+    margin: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    filter: drop-shadow(16px 16px 16px rgba(0,0,0,0.2));
+}
+.gallery__img h1{
+    text-align: center;
+    font-size: 20px;
+    color: peru;
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+}
+.gallery__img img:hover{
+    transform: scale(1.1);
+}
+.gallery__content button{
+    margin: 0 auto;
+}
+

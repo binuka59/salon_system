@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+ --orange:orange;
+ --red:#e74c3c;
+ --black:black;
+ --white:white;
+ --light-bg:#f6f6f6;
+ --border:.2rem solid var(--black);
+--box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+--border:.2rem solid rgba(0,0,0,.1);
+--outline:.1rem solid rgba(0,0,0,.1);
+--outline-hover:.2rem solid black;
+background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6)),url(image/wedding6.jpg);
+
+}
+*{
+    
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+   color:var(--black);
+   transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+    
+ }
+
+ section{
+    padding:3rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+ }
+ 
+ .disabled{
+    user-select: none;
+    pointer-events: none;
+    opacity: .5;
+ }
+
+.message{
+    display: block;
+    background: var(--bg-color);
+    padding:1.5rem 1rem;
+    font-size: 2rem;
+    color:var(--black);
+    margin-bottom: 2rem;
+    text-align: center;
+ }
+ .container{
+    max-width: 1200px;
+    padding:-1rem;
+    margin:0 auto;
+ }
+ 
+ .admin-product-form-container.centered{
+    display: flex;
+    align-items:center;
+    justify-content: right;
+    min-height: 100vh;
+     
+ }
+ 
+ .admin-product-form-container form{
+    max-width:60rem;
+    margin:0 auto;
+    padding:2rem;
+    border-radius: .5rem;
+    margin-left:60rem;
+    height: 55rem;
+    
+ }
+ 
+ .admin-product-form-container form h3{
+    text-align: center;
+    padding:.2rem 0;
+    font-size: 3.1rem;
+    color:whitesmoke;
+   
+    margin-top: 2rem;
+ }
+ 
+ .admin-product-form-container form h3 span{
+    background:rgb(245, 215, 158);
+    color:rgb(0, 0, 0);
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    border:3px solid rgb(255, 255, 255);
+    margin-bottom: 3rem;
+ 
+ }
+ 
+ .admin-product-form-container form p{
+    width: 100%;
+    border-radius: .5rem;
+    padding:1.2rem 1.5rem;
+    font-size: 1.7rem;
+    margin:2rem 0;
+    color: black;
+    
+ }
+ 
+ .admin-product-form-container form .form label{
+     width:80rem;
+     border-radius: .5rem;
+     padding:1rem ;
+     margin-left: -15rem;
+     margin-top: 5rem;
+     margin-bottom:10rem;
+     font-size:2.6rem;
+     
+     color: rgb(255, 255, 255);
+     text-transform: none;
+  }
+ 
+  .admin-product-form-container form .form input{
+     width: 100%;
+     border-radius: .5rem;
+     padding-top: 5rem;
+     padding:1.2rem 1.5rem;
+    
+     font-size: 1.7rem;
+     margin:2rem 0;
+     background: rgb(255, 255, 255);
+     color: black;
+     text-transform: none;
+  }
+  .admin-product-form-container form .forms label{
+     width:80rem;
+     border-radius: .5rem;
+     padding:1rem ;
+     margin-left:-20rem;
+     margin-top: 5rem;
+     margin-bottom:10rem;
+     font-size:2.6rem;
+     
+     color: rgb(255, 255, 255);
+     text-transform: none;
+  }
+ 
+  .admin-product-form-container form .forms {
+    font-size: 2.7rem;
+    padding:1rem;
+    color: rgb(255, 255, 255);
+    
+     
+  }
+  .admin-product-form-container form .btn{
+      display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: .5rem;
+    margin-top:2.5rem;
+    font-size: 2rem;
+    padding:1.5rem 3rem;
+    background:wheat;
+    color:black;
+    text-align: center;
+    border:2px solid rgb(0, 0, 0);
+    margin-bottom: 4rem;
+  }
+ 
+   .admin-product-form-container form .btn:hover{
+    background:gray;
+    color:white;
+    border:2px solid wheat;
+    transition: 1s;
+    
+  }
+  /* ---------------------------------------------------------------invoice---------------------------------------------------- */
+  .appoint-display  h4 span{
+     
+    color:rgb(198, 173, 129);
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    margin-left:10rem;
+    font-size: 3rem;
+  
+ }
+ 
+ .appoint-display  h4{
+     
+    color:rgb(255, 255, 255);
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    margin-left:10rem;
+    font-size: 2.5rem;
+ }
+ 
+  /* ---------------------------------------------------- display data------------------------------------------------------------ */
+ 
+  .appoint-display  h3{
+    text-align: center;
+    padding:.2rem 0;
+    font-size: 3.1rem;
+    color:whitesmoke;
+    margin-left: 50rem;
+    margin-top: 3rem;
+ }
+ 
+ 
+ 
+ .appoint-display  h3 span{
+    background:rgb(245, 215, 158);
+    color:rgb(0, 0, 0);
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    border:3px solid rgb(255, 255, 255);
+    margin-bottom: 3rem;
+ 
+ }
+ .appoint-display form h5{
+    color: rgb(86, 83, 185);
+    font-size:2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    outline-color: #fff;
+    
+ }
+ .appoint-display form h5 span{
+   color: wheat;
+   font-size:2.8rem;
+   gap: 2rem;
+   text-align: center;
+   margin-bottom: 2rem;
+   outline-color: #fff;
+   
+}
+  .appoint-display
+  {
+     margin:5rem -2;
+  }
+  
+  .appoint-display .display-table{
+    width: 95%;
+    text-align: center;
+    align-items: center;
+    margin-left:4rem;
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+     
+    
+ }
+ .appoint-display .display-table thead th{
+    padding:1rem;
+    font-size: 2rem;
+    background:antiquewhite;
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+  }
+     
+  
+  .appoint-display .display-table tbody{
+      background: lightsteelblue;
+      border-radius: 1rem;
+   }
+  
+  
+  .appoint-display .display-table th{
+     padding:1rem;
+     font-size: 2.5rem;
+     color:rgb(0, 0, 0);
+     font-style: bold;
+     border-radius: 1rem;
+    
+     
+  }
+  .appoint-display .display-table .topic{
+    padding:1rem;
+    font-size: 2rem;
+    background:antiquewhite;
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    
+     
+  }
+  .appoint-display .display-table .cols{
+    padding-top: 2rem;
+    font-style: bold;
+    background:antiquewhite;
+    color: #ffffff;
+   
+    
+ }
+  .appoint-display .display-table .topic{
+      padding:1rem;
+      font-size:3rem;
+      color:ghostwhit;
+      font-style: bold;
+      background:rgb(135, 125, 106);
+     
+      
+   }
+  
+  
+  .appoint-display .display-table td{
+     padding:1rem;
+     font-size: 2.5rem;
+     color:rgb(0, 0, 0);
+     font-style: bold;
+     border-radius: 1rem;
+  }
+ 
+  .appoint-display .display-table td a{
+     padding:1rem;
+     font-size: 2.8rem;
+     color:rgb(0, 0, 0);
+     font-style: bold;
+     border-radius: 1rem;
+  }
+ 
+  .appoint-display .display-table tr:nth-child(even) {
+      background-color:rgb(151, 156, 159) ; /* Change this color to your desired stripe color */
+      
+    }
+  .appoint-display .display-table tr:nth-child(even):hover{
+      background-color:wheat; /* Change this color to your desired stripe color */
+      
+      
+    }
+    
+  .appoint-display .display-table tr:nth-child(odd) {
+      background-color:whitesmoke; 
+    }
+  .appoint-display .display-table tr:nth-child(odd):hover {
+      background-color:rgb(195, 225, 242)  ;
+    }
+    .appoint-display .display-table  .btn:first-child{
+     margin-top: 0;
+  }
+ 
+  
+ 
+ 

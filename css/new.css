@@ -1,0 +1,179 @@
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+ 
+html::-webkit-scrollbar{
+    width: .6rem;
+}
+ 
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+ 
+html::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+}
+ 
+section{
+    padding: 5rem 7%;
+}
+
+.heading{
+   text-align: center;
+   
+   text-transform: capitalize;
+   margin-bottom: 3rem;
+   font-size: 4rem;
+   margin-top: 4rem;
+}
+ 
+
+.message{
+    display: block;
+    background:rgb(248, 92, 92);
+    padding:1.5rem 1rem;
+    font-size: 3rem;
+    color:var(--black);
+    margin-bottom: 5rem;
+    text-align: center;
+ }
+ 
+
+/* ------------------------------------------------------------------header -----------------------------------------------------------*/
+
+.header{
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:10; left:10; right:10;
+    z-index: 1000;
+    width: 100%;
+}
+ 
+
+
+.header .navbar #close-navbar {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    display: none;
+    
+  }
+ 
+.header .navbar a{
+    font-size: 2.2rem;
+    margin-left: 6rem;
+    color:rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-weight: bolder;
+   
+}
+
+.header .navbar a.logi{
+    font-size: 2.2rem;
+    margin-left:16rem;
+    color:rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-weight: bolder;
+    
+}
+
+ 
+ .header .navbar a:hover{
+    color:navajowhite;
+    text-decoration: underline;
+    
+ }
+
+
+
+
+
+ 
+
+
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+     }
+
+    .header .navbar a {
+        font-size: 1.7rem;
+    }
+  
+     section{
+        padding:3rem 2rem;
+     }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+     .header .navbar {
+        position: fixed;
+        top: 0;
+        right: -105%;
+        width: 30rem;
+        background: var(--white);
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        z-index: 1200;
+      }
+      .header .navbar #close-navbar {
+        display: block;
+      }
+      .header .navbar.active {
+        right: 0;
+      }
+      
+      .header .navbar a {
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 3rem;
+      }
+
+    .home .content h3{
+        font-size: 5.5rem;
+    }
+
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+}

@@ -1,0 +1,42 @@
+.header .shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem));
+    position: absolute;
+   
+    top:-500%; right:5%;
+    padding:1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width:35rem;
+    height: 35rem;
+    background: rgb(255, 255, 255);
+    
+}
+
+.header .shopping-cart.active{
+    top:7rem;
+    transition: 0.00s ;
+   
+}
+
+
+.header .shopping-cart .box{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    position: relative;
+    margin:1rem 0;
+}
+
+
+.header .shopping-cart .box  h3{
+    color:rgb(255, 0, 0);
+    font-size: 2rem;
+    
+    text-align: center;
+}
+
+.header .shopping-cart .box  span{
+    color:rgb(191, 222, 12);
+    font-size: 1.6rem;
+}

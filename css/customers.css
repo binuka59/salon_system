@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+   --green:wheat;
+   --black:rgb(247, 238, 238);
+   --white:#fff;
+   --bg-color:rgb(123, 123, 120);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --border:.1rem solid var(--black);
+   background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.3)),url(image/foto11.jpg);
+   --border:.2rem solid var(--black);
+   --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+   --border:.2rem solid rgba(0,0,0,.1);
+   --outline:.1rem solid rgba(0,0,0,.1);
+   --outline-hover:.2rem solid black;
+
+}
+
+*{
+    
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:var(--black);
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+    
+ }
+
+ section{
+    padding:3rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+ }
+ 
+ .disabled{
+    user-select: none;
+    pointer-events: none;
+    opacity: .5;
+ }
+
+ .btn
+ {
+    background:wheat;
+    color:black;
+    padding: 1.2rem 1rem;
+    width:46rem;
+    border-radius: .5rem;
+    border:2px solid rgb(0, 0, 0);
+    font-size:2rem;
+ }
+ .btn:hover
+ {
+    background:gray;
+    color:white;
+    border:2px solid wheat;
+    transition: 1s;
+ }
+ .sub-btn
+ {
+    background:wheat;
+    color:black;
+    padding: 1.2rem 1rem;
+    width:46rem;
+    border-radius: .5rem;
+    border:2px solid rgb(0, 0, 0);
+    font-size:2rem;
+    margin-left: 40rem;
+    margin-top: -2rem;
+    margin-bottom: 4rem;
+ }
+ .sub-btn:hover
+ {
+    background:gray;
+    color:white;
+    border:2px solid wheat;
+    transition: 1s;
+ }
+
+ .edit-btn
+ {
+    display: block;
+    width:15rem;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   background:gray;
+   color:white;
+   font-size: 2rem;
+   padding:.7rem 1rem;
+   text-transform: capitalize;
+   cursor: pointer;
+   text-align: center;
+   border:2px solid rgb(0, 0, 0);
+ }
+ .edit-btn:hover
+ {
+    color: black;
+    background: white;
+    border: 2px solid sandybrown;
+    transition: 1s;
+ }
+ .del-btn
+ {
+    width:15rem;
+    display: block;
+    padding:1rem 1rem;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   color:rgb(255, 255, 255);
+   font-size: 2rem;
+   text-transform: capitalize;
+   cursor: pointer;
+   text-align: center;
+   background-color: darkred;
+   border:2px solid wheat;
+ }
+.del-btn:hover
+{
+    color: rgb(255, 0, 0);
+    background:gray;
+    border: 2px solid sandybrown;
+    transition: 1s;
+}
+ /* ------------------------------------------------       topic  -------------------------------------------------------------------- */
+ .product-display h3{
+    text-align: center;
+    padding:.2rem 0;
+    font-size: 3.1rem;
+    color:whitesmoke;
+    margin-left: 50rem;
+    margin-top: 3rem;
+ }
+ 
+ 
+ 
+ .product-display h3 span{
+    background:rgb(245, 215, 158);
+    color:rgb(0, 0, 0);
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    border:3px solid rgb(255, 255, 255);
+    margin-bottom: 3rem;
+ 
+ }
+
+ /* ---------------------------------------------------------table manage  ---------------------------------------------------------- */
+ 
+.product-display .product-display-table{
+    width: 95%;
+    text-align: center;
+    align-items: center;
+    margin-left:4rem;
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+    
+ }
+ 
+ .product-display .product-display-table th{
+    padding:1rem;
+    font-size: 2rem;
+    background:antiquewhite;
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    
+ }
+ 
+ .product-display .product-display-table td{
+    padding:1rem;
+    font-size: 2.2rem;
+    color:black;
+    font-style: bold;
+    border-radius: .4rem;
+ }
+ 
+ .product-display .product-display-table tr:nth-child(even) {
+    background-color:rgb(151, 156, 159) ; /* Change this color to your desired stripe color */
+    
+  }
+  .product-display .product-display-table tr:nth-child(even):hover{
+    background-color:wheat; /* Change this color to your desired stripe color */
+    
+    
+  }
+  
+  .product-display .product-display-table tr:nth-child(odd) {
+    background-color:whitesmoke; 
+  }
+  .product-display .product-display-table tr:nth-child(odd):hover {
+    background-color:rgb(195, 225, 242) ;
+  }
+  
+  .product-display .product-display-table a i{
+    color: rgb(0, 0, 0);
+    
+ }
+ 
+ /* ---------------------------------------------------add customer--------------------------------------------------------------- */
+ .container{
+    max-width: 1200px;
+    padding:2rem;
+    margin:0 auto;
+ }
+ 
+ .admin-product-form-container.centered{
+    display: flex;
+    align-items:center;
+    justify-content: right;
+    min-height: 100vh;
+     
+ }
+ 
+ .admin-product-form-container form{
+    max-width: 50rem;
+    margin:0 auto;
+    padding:2rem;
+    border-radius: .5rem;
+    margin-left: 60rem;
+ }
+ 
+ .admin-product-form-container form h3{
+   
+    color:rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    margin-top:-2rem;
+    text-align:20rem;
+    font-size: 2.5rem;
+ }
+ 
+ .admin-product-form-container form h3 span{
+    text-transform: uppercase;
+     background:wheat;
+     color:rgb(0, 0, 0);
+     display: inline-block;
+     padding:.5rem 3rem;
+     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+     border:3px solid rgb(255, 255, 255);
+ 
+ }
+ 
+ .admin-product-form-container form .box{
+    width: 100%;
+    border-radius: .5rem;
+    padding:1.2rem 1.5rem;
+    font-size: 1.7rem;
+    margin:1rem 0;
+    background: whitesmoke;
+    color: black;
+    text-transform: none;
+ }
+ 
+ .admin-product-form-container form .box option{
+     width: 100%;
+     border-radius: .5rem;
+     padding:1.2rem 1.5rem;
+     font-size: 1.7rem;
+     margin:1rem 0;
+     background: rgb(255, 255, 255);
+     color: black;
+     text-transform: none;
+  }
+ 

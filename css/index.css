@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: #000;
+  
+}
+.background{
+    background:linear-gradient(rgba(235, 235, 230, 0.6),rgb(106, 105, 105)), url(../images/image.jpg) no-repeat;
+    background-position: center;
+    background-size:cover ;
+    height: 100vh;
+    width: 100%;
+    filter: blur(2px);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 13%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 85%;
+    height: 550px;
+    margin-top: 20px;
+    background:linear-gradient(rgba(163, 163, 160, 0.6),rgb(10, 10, 10)),url(../images/back.webp) no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    
+    
+  
+    
+    
+}
+.item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    color: #fff;
+    background: transparent;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+
+
+}
+
+.item a.logo{
+    color: #fff;
+    font-size:5rem;
+    margin: -5rem -3rem;
+
+}
+.item a.logo span{
+    color:  rgb(208, 151, 95);
+    font-size: 5rem;
+   font-style: italic;
+
+}
+.item a.logo span1{
+    color: rgb(208, 151, 95);
+    font-size:5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.text-item h2{
+    font-size:3rem;
+    line-height: 2;
+}
+
+
+.text-item p{
+    font-size: 16px;
+    margin: 20px 0;
+    
+}
+.social-icon a i{
+    color: rgb(252, 222, 184);
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+
+.social-icon a:hover i{
+    transform: scale(2.2);
+    color: rgb(253, 22, 22);
+}
+
+.container .login-section{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+    color: whitesmoke;
+    backdrop-filter: blur(1px);
+}
+
+.login-section .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.login-section .form-box.login{
+    transform: translateX(5px);
+    transition: transform .10s ease;
+    transition-delay: 0.7s;
+}
+.login-section.active .form-box.login{
+    transform: translateX(430px);
+    transition-delay: 0s;
+}
+
+
+
+.login-section .form-box h2{
+    text-align: center;
+    font-size: 30px;
+   
+}
+
+
+
+
+.form-box .input-box{
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid#fff;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+    color:lightgoldenrodyellow;
+
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 800px;
+    pointer-events: none;
+    transition: .5s ease;
+
+}
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+}
+.input-box input:focus~ label,
+.input-box input:valid~ label{
+    top: -5px;
+}
+.remember-password{
+    font-size: 14px;
+    font-weight: 500;
+    margin: -15px 0 30px ;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-password label input{
+    accent-color: #fff;
+    margin-right: 5px;
+
+}
+.remember-password a{
+    color: #e84b4b;
+    text-decoration: none;
+    margin-left: 15rem;
+}
+.remember-password a:hover{
+    text-decoration: underline;
+}
+.btn{
+    
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: gray;
+    font-size: 18px;
+    color: black;
+    box-shadow: rgba(14, 1, 1, 0.4);
+
+}
+.btn:hover{
+    background: rgb(208, 151, 95);
+    color: azure;
+    box-shadow: rgba(255, 255, 255, 0.4);
+}
+.create-account{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 25px;
+}
+.create-account p a{
+    color: #fff;
+    font-weight: 600px;
+    text-decoration: none;
+}
+.create-account p a:hover{
+    text-decoration: underline;
+}
+
+
+.login-section .form-box.login .form.error-msg{
+    margin:10px 0;
+    display: block;
+    background: crimson;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:100px;
+}

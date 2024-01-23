@@ -1,0 +1,208 @@
+:root{
+    --orange:orange;
+    --red:#e74c3c;
+    --black:black;
+    --white:white;
+    --light-bg:#f6f6f6;
+    --border:.2rem solid var(--black);
+   --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+   --border:.3rem solid rgba(0,0,0,.1);
+   --outline:.4rem solid rgba(0,0,0,.1);
+   --outline-hover:.2rem solid black;
+   
+   }
+
+   @import url('https://fonts.googleapis.com/css?family=Playfair+Display:1,300,400,400italic,500,700,700italic,900');
+
+
+   
+   *{
+      font-family: 'Playfair Display', sans-serif;
+      margin:0; padding:0;
+      box-sizing: border-box;
+      outline: none; border:none;
+      text-decoration: none;
+      transition: all .2s linear;
+   }
+    
+   
+   html{
+       font-size: 62.5%;
+       overflow-x: hidden;
+       scroll-behavior: smooth;
+       scroll-padding-top: 6rem;
+   }
+    
+   html::-webkit-scrollbar{
+       width: .6rem;
+   }
+    
+   html::-webkit-scrollbar-track{
+       background-color: var(--white);
+   }
+    
+   html::-webkit-scrollbar-thumb{
+       background-color: var(--primary-color);
+   }
+    
+   section{
+       padding: 5rem 7%;
+   }
+ 
+ .home-category{
+    padding-bottom: 0;
+ }
+ .products h1 
+ {
+    text-align: right;
+ }
+ .products h1 span
+ {
+    color: rgb(234, 179, 112);
+    font-style: italic;
+    
+ }
+ 
+ .product .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,34rem));
+    gap:2rem;
+ }
+ 
+ .product .box-container .box{
+    border-radius: .5rem;
+    position: relative;
+    padding:10rem 2rem;
+    background:rgb(100, 98, 98);
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    
+ }
+ .product .box-container .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+ }
+ 
+ .product .box-container .box .image{
+ 
+    height:60%;
+    width: 90%;
+    object-fit: cover;
+ 
+ }
+ 
+ .product .box-container .box .price{
+    position: absolute;
+    top:2rem; left:2rem;
+    border-radius: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width:13rem;
+    border:var(--border);
+    color:rgb(0, 0, 0);
+    font-size: 2.3rem;
+    background-color:rgb(185, 167, 103);
+    
+ }
+ .product .box-container .box .price:hover{
+    transition: 3s;
+    background-color:rgb(183, 155, 54);
+    color: azure;
+    
+ }
+ .product .box-container .box .apply{
+    position: absolute;
+    top:2rem; right:2rem;
+    border-radius: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 14rem;
+    border:var(--border);
+    color:rgb(0, 0, 0);
+    font-size: 2rem;
+    background-color:rgb(185, 103, 103);
+    
+ }
+ .product .box-container .box .apply:hover{
+   transition: 3s;
+    background-color:rgb(198, 38, 38);
+    color: azure;
+    
+ }
+ 
+ .product .box-container .box .name{
+    color:rgb(0, 0, 0);
+    font-size: 2.9rem;
+    font-style: bold;
+ 
+ }
+ 
+ .product .box-container .box .dis{
+    margin-top: 1rem;
+    color:rgb(235, 22, 22);
+    font-size: 2.3rem;
+    font-style: bold;
+ 
+ }
+ .product .box-container .err{
+    padding-top:2rem;
+    text-align:center;
+    margin-right:-60rem;
+    padding: 2rem;
+    color:rgb(255, 0, 0);
+    font-size:3rem;
+    background: rgb(0, 0, 0);
+    border-radius: .5rem;
+   
+ 
+ }
+ 
+ 
+ @media (max-width:768px){
+ 
+    .home-bg{
+       background-position: left;
+    }
+ 
+    .home-bg .home{
+       justify-content: center;
+       text-align: center;
+    }
+ 
+    .checkout-orders form .flex .inputBox{
+       width: 100%;
+    }
+ 
+ }
+ 
+ @media (max-width:450px){
+ 
+    .home-category .box-container{
+       grid-template-columns: 1fr;
+    }
+ 
+    .products .box-container{
+       grid-template-columns: 1fr;
+    }
+ 
+    .quick-view .box img{
+       height: auto;
+       width: 100%;
+    }
+ 
+    .about .row .box img{
+       width: 100%;
+       height: auto;
+    }   
+ 
+    .shopping-cart .box-container{
+       grid-template-columns: 1fr;
+    }
+ 
+    .wishlist .box-container{
+       grid-template-columns: 1fr;
+    }
+ 
+ }

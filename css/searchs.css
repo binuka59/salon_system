@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+   --green:wheat;
+   --black:rgb(247, 238, 238);
+   --white:#fff;
+   --bg-color:rgb(123, 123, 120);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --border:.1rem solid var(--black);
+   background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6)),url(../images/home-bg2.png);
+   --border:.2rem solid var(--black);
+   --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+   --border:.2rem solid rgba(0,0,0,.1);
+   --outline:.1rem solid rgba(0,0,0,.1);
+   --outline-hover:.2rem solid black;
+
+}
+
+*{
+    
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:var(--black);
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+    
+ }
+
+ section{
+    padding:3rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+ }
+ 
+ .disabled{
+    user-select: none;
+    pointer-events: none;
+    opacity: .5;
+ }
+ 
+.container{
+    max-width: 1200px;
+    padding:-1rem;
+    margin:0 auto;
+ }
+ 
+ .admin-product{
+    display: flex;
+    align-items:center;
+    justify-content: right;
+    min-height: 100vh;
+     
+ }
+ 
+ .admin-product form{
+    max-width:60rem;
+    margin:0 auto;
+    padding:2rem;
+    border-radius: .5rem;
+    margin-left:60rem;
+    height: 55rem;
+    
+ }
+ 
+ .admin-product form h3{
+    text-align: center;
+    padding:.2rem 0;
+    font-size: 3.1rem;
+    color:whitesmoke;
+   
+    margin-top: 3rem;
+ }
+ 
+ .admin-product form h3 span{
+    background:rgb(245, 215, 158);
+    color:rgb(0, 0, 0);
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    border:3px solid rgb(255, 255, 255);
+    margin-bottom: 3rem;
+ 
+ }
+ 
+ .admin-product form p{
+    width: 100%;
+    border-radius: .5rem;
+    padding:1.2rem 1.5rem;
+    font-size: 1.7rem;
+    margin:2rem 0;
+    color: rgb(255, 0, 0);
+    
+ }
+ 
+ .admin-product form h4{
+     font-size: 2.5rem;
+     margin-left:-60rem;
+     color: rgb(214, 186, 131);
+     text-transform: none;
+  }
+ 
+ .admin-product label{
+     color: rgb(255, 255, 255);
+     margin-left: -60rem;
+     font-size: 2.5rem;
+  }
+  .admin-product input{
+     width:50rem;
+     border-radius: 1rem;
+     padding:1rem ;
+     margin-left:-35rem;
+     margin-top: 1rem;
+     margin-bottom:3rem;
+     font-size:2.6rem;
+     color: rgb(0, 0, 0);
+     text-transform: none;
+  }
+ 
+  .admin-product button {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 2rem;
+    margin-top:2.5rem;
+    font-size: 2rem;
+    padding:1.5rem 3rem;
+    background:wheat;
+    color:black;
+    text-align: center;
+    border:2px solid rgb(255, 255, 255);
+    margin-bottom: 4rem;  
+  }
+  .admin-product button:hover {
+    background:gray;
+    color:white;
+    border:2px solid wheat;
+    transition: 1s;
+   }
+   /* -------------------------------------------------display detaiils  ------------------------------------------------------- */
+   .product-display
+ {
+    margin:1rem 2;
+ }
+ .product-display h4
+ {
+    color: bisque;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+ }
+ .product-display h4 span
+ {
+    color: whitesmoke;
+    font-size: 2.8rem;
+ }
+ 
+ 
+ .product-display .display-table{
+    width: 95%;
+    text-align: center;
+    align-items: center;
+    margin-left:4rem;
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+   
+}
+.product-display .display-table thead th{
+    padding:1rem;
+    font-size: 2rem;
+    background:antiquewhite;
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+ }
+    
+ 
+ .product-display .display-table tbody{
+     background: lightsteelblue;
+     border-radius: 1rem;
+  }
+ 
+ 
+ .product-display .display-table th{
+    padding:0rem;
+    font-size: 2.5rem;
+    color:rgb(0, 0, 0);
+    font-style: bold;
+    border-radius: 1rem;
+   
+    
+ }
+ .product-display .display-table .topic{
+     padding:1rem;
+     font-size:3rem;
+     color:ghostwhit;
+     font-style: bold;
+     background:rgb(135, 125, 106);
+    
+     
+  }
+ 
+ 
+ .product-display .display-table td{
+    padding:1rem;
+    font-size: 2.5rem;
+    color:rgb(0, 0, 0);
+    font-style: bold;
+    border-radius: 1rem;
+ }
+
+ .product-display .display-table td a{
+    padding:1rem;
+    font-size: 2.8rem;
+    color:rgb(0, 0, 0);
+    font-style: bold;
+    border-radius: 1rem;
+ }
+ .product-display .display-table td a i{
+    padding:1rem;
+    font-size: 2.8rem;
+    color:rgb(0, 0, 0);
+    font-style: bold;
+    border-radius: 1rem;
+ }
+ 
+
+
+ .product-display .display-table tr:nth-child(even) {
+     background-color:rgb(151, 156, 159) ; /* Change this color to your desired stripe color */
+     
+   }
+ .product-display .display-table tr:nth-child(even):hover{
+     background-color:wheat; /* Change this color to your desired stripe color */
+     
+     
+   }
+   
+ .product-display .display-table tr:nth-child(odd) {
+     background-color:whitesmoke; 
+   }
+ .product-display .display-table tr:nth-child(odd):hover {
+     background-color:rgb(195, 225, 242)  ;
+   }
+   .product-display .display-table  .btn:first-child{
+    margin-top: 0;
+ }
+
+ 
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   .product-display{
+      overflow-y:scroll;
+   }
+
+   .product-display .product-display-table{
+      width: 80rem;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+}

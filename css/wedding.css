@@ -1,0 +1,38 @@
+.style_top{
+    
+    background-image: url(image/wedding2.jpg);
+    background-position: 30%;
+    background-repeat: no-repeat;
+    background-size:100%;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s infinite ease-in-out;
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(image/wedding2.jpg);
+    }
+    30%
+    {
+        background-image: url(image/wedding3.jpg);
+    }
+    60%
+    {
+        background-image: url(image/wedding4.jpg);
+    }
+    90%
+    {
+        background-image: url(image/wedding6.jpg);
+    }
+    120%
+    {
+        background-image: url(image/wedding5.jpg);
+    }
+    140%
+    {
+        background-image: url(image/wedding1.jpg);
+    }
+    
+}

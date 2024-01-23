@@ -1,0 +1,569 @@
+
+:root{
+    --green:orange;
+    --black:rgb(247, 238, 238);
+    --white:#fff;
+    --bg-color:rgb(123, 123, 120);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid var(--black);
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.3)),url(image/z.jpg);
+ 
+ }
+ *{
+    
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+   color:var(--black);
+   transition: all .2s linear;
+   
+
+}
+ 
+ 
+ .btn,
+ .viewbtn
+{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    padding:1rem 3rem;
+    background: wheat;
+    color:black;
+    margin-left: 34rem;
+    border:2px solid rgb(0, 0, 0);
+ }
+ 
+ 
+ .btn:hover{
+   background:gray;
+    color:white;
+    border:2px solid wheat;
+    transition: 1s;
+
+ }
+ 
+ .delete-btn{
+    background-color: darkred;
+ }
+ 
+ .opt-btn{
+    
+   display: block;
+  width:46rem;
+   cursor: pointer;
+   border-radius: .5rem;
+   margin-top: 1rem;
+   font-size: 2rem;
+   padding:1rem 3rem;
+   color:rgb(255, 255, 255);
+   margin-left: 34rem;
+   border:2px solid rgb(0, 0, 0);
+   background-color:darkred;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+ }
+
+
+ .opt-btn:hover
+ { 
+   background:rgb(0, 0, 0);
+   color:white;
+   border:2px solid darkred;
+   transition: 1s;
+ }
+    
+ 
+ .viewbtn:hover,
+ i:hover{
+    background-color:black;
+    color:whitesmoke;
+ 
+ }
+ 
+ .btn:hover,
+ .delete-btn:hover
+ {
+   
+    background-color: gray;
+    color: black;
+    
+ 
+ }
+ 
+ 
+ 
+ .message{
+    display: block;
+    background: var(--bg-color);
+    padding:1.5rem 1rem;
+    font-size: 2rem;
+    color:var(--black);
+    margin-bottom: 2rem;
+    text-align: center;
+ }
+ 
+ .container{
+    max-width: 1200px;
+    padding:2rem;
+    margin:0 auto;
+ }
+ 
+ .admin-product-form-container.centered{
+    display: flex;
+    align-items:center;
+    justify-content: right;
+    min-height: 100vh;
+     
+ }
+
+ 
+ 
+ .admin-product-form-container form{
+    max-width: 50rem;
+    margin:0 auto;
+    padding:2rem;
+    border-radius: .5rem;
+    margin-right:60rem;
+ }
+
+ .admin-product-form-container form label{
+   
+   color:wheat;
+   margin-left:-8rem;
+   margin-top:15rem;
+   margin-bottom: 5rem;
+   padding: 2rem;
+   font-size: 2.8rem;
+}
+ 
+.admin-product-form-container form h3{
+   color:rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    text-align:20rem;
+    font-size: 2.5rem;
+ }
+ 
+ .admin-product-form-container form h3 span{
+    text-transform: uppercase;
+    background:wheat;
+    color:rgb(0, 0, 0);
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    border:3px solid rgb(255, 255, 255);
+ 
+ }
+ 
+ .admin-product-form-container form .box{
+   margin-top: 3rem;
+    width: 100%;
+    border-radius: .5rem;
+    padding:1.2rem 1.5rem;
+    font-size: 1.7rem;
+    margin:1rem 0;
+    background: rgb(252, 252, 252);
+    color: black;
+    text-transform: none;
+ }
+ .admin-product-form-container form .box1{
+   width: 100%;
+   border-radius: .5rem;
+   font-size: 1.7rem;
+   margin:1rem 0;
+   margin-left:60rem;
+   margin-top:-16.5rem;
+ 
+   color: black;
+   text-transform: none;
+}
+.admin-product-form-container form .box2{
+    width: 100%;
+    border-radius: .5rem;
+    
+    font-size: 1.7rem;
+    margin:1rem 0;
+    margin-left:60rem;
+    margin-top:-9.5rem;
+  
+    color: black;
+    text-transform: none;
+ }
+
+
+
+ .admin-product-form-container form .box option{
+     width: 100%;
+     border-radius: .5rem;
+     padding:1.2rem 1.5rem;
+     font-size: 1.7rem;
+     margin:1rem 0;
+     background: rgb(255, 255, 255);
+     color: black;
+     text-transform: none;
+  }
+ 
+ .product-display{
+    margin:5rem -2;
+ }
+ 
+ .product-display h3{
+    
+   color:rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    text-align:20rem;
+    font-size: 2.5rem;
+ }
+ 
+ 
+ 
+ .product-display h3 span{
+   text-transform: uppercase;
+   background:wheat;
+   color:rgb(0, 0, 0);
+   display: inline-block;
+   padding:.5rem 3rem;
+   clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+   border:3px solid rgb(255, 255, 255);
+ 
+ }
+ 
+ .product-display .product-display-table{
+    width: 99%;
+    text-align: center;
+    margin-left:3rem;
+    border-radius:0.5rem;
+    
+ }
+ 
+ 
+ 
+ .product-display .product-display-table th{
+    padding:1rem;
+    font-size: 2rem;
+    background:rgb(135, 125, 106);
+    color: ghostwhite;
+    border-radius:0.5rem;
+    
+ }
+ 
+ 
+ .product-display .product-display-table td{
+    padding:1rem;
+    font-size: 2.2rem;
+    color:black;
+    font-style: bold;
+    border-radius:0.5rem;
+ }
+ 
+ .product-display .product-display-table tr:nth-child(even) {
+    background-color:rgb(151, 156, 159) ; /* Change this color to your desired stripe color */
+    
+  }
+  .product-display .product-display-table tr:nth-child(even):hover{
+    background-color:wheat; /* Change this color to your desired stripe color */
+    
+    
+  }
+  
+  .product-display .product-display-table tr:nth-child(odd) {
+    background-color:whitesmoke; 
+  }
+  .product-display .product-display-table tr:nth-child(odd):hover {
+    background-color:rgb(195, 225, 242) ;
+  }
+  
+ 
+ 
+ /*------------------------------------------------appointment manage -------------------------------------------------------------------*/
+ 
+ .appoint-display
+ {
+    margin:5rem -2;
+ }
+ 
+ .appoint-display .display-table{
+    width: 90%;
+    margin-left:6rem;
+    text-align: center;
+    border-radius: 1rem;
+   
+ 
+    
+ }
+ .appoint-display .display-table tbody{
+     background: lightsteelblue;
+     border-radius: 1rem;
+  }
+ 
+ 
+ .appoint-display .display-table th{
+    padding:1rem;
+    font-size: 2.5rem;
+    color:rgb(0, 0, 0);
+    font-style: bold;
+   
+    
+ }
+ .appoint-display .display-table .topic{
+     padding:1rem;
+     font-size:3rem;
+     color:ghostwhit;
+     font-style: bold;
+     background:rgb(135, 125, 106);
+    
+     
+  }
+ 
+ 
+ .appoint-display .display-table td{
+    padding:1rem;
+    font-size: 2.5rem;
+    color:rgb(0, 0, 0);
+    font-style: bold;
+ }
+ .appoint-display .display-table tr:nth-child(even) {
+     background-color:rgb(151, 156, 159) ; /* Change this color to your desired stripe color */
+     
+   }
+ .appoint-display .display-table tr:nth-child(even):hover{
+     background-color:wheat; /* Change this color to your desired stripe color */
+     
+     
+   }
+   
+ .appoint-display .display-table tr:nth-child(odd) {
+     background-color:whitesmoke; 
+   }
+ .appoint-display .display-table tr:nth-child(odd):hover {
+     background-color:rgb(195, 225, 242)  ;
+   }
+  
+ 
+ 
+ .appoint-display .product-table{
+     margin-top: 5rem;
+     width: 90%;
+     margin-left:6rem;
+     text-align: center;
+     border-radius: 1rem;
+   
+  }
+  
+  
+   
+   .appoint-display .product-table th{
+     width:49rem;
+     padding:2rem;
+     font-size: 2.2rem;
+     color:rgb(0, 0, 0);
+     font-style: bold;
+    
+     
+  }
+  
+   .appoint-display .product-table td{
+     padding:1rem;
+     font-size: 2.5rem;
+     color:whitesmoke;
+     font-style: bold;
+      width:40rem;
+  }
+ 
+  .appoint-display .product-table td .fom{
+     padding:.5rem;
+     font-size: 2.2rem;
+     color:rgb(0, 0, 0);
+     font-style: bold;
+     width:40rem;
+  }
+  .appoint-display .product-table td .fom option{
+     padding:.5rem;
+     font-size: 2.2rem;
+     color:rgb(0, 0, 0);
+     font-style: bold;
+     width:40rem;
+  }
+ 
+  .appoint-display .product-table td .fomr{
+     padding:1rem;
+     font-size: 2.2rem;
+     color:rgb(0, 0, 0);
+     font-style: bold;
+     width:40rem;
+    
+  }
+ 
+  
+  .appoint-display .product-table .btn{
+     margin-top: 2rem;
+     background: rgb(157, 255, 0);
+     width:50rem;
+     text-align: center;
+     color: black;
+     margin-left:26rem;
+     
+  }
+ 
+  .appoint-display .product-table .btn:hover{
+     margin-top: 2rem;
+     background: rgb(216, 239, 211);
+    
+     width:50rem;
+     text-align: center;
+     margin-left:26rem;
+     
+  }
+ 
+ 
+ .appoint-display .product-table td:nth-child(even) {
+      background-color:rgb(236, 198, 126) ; /* Change this color to your desired stripe color */
+      
+    }
+ .appoint-display .product-table td:nth-child(even):hover{
+      background-color:rgb(151, 156, 159); /* Change this color to your desired stripe color */
+      
+      
+    }
+    
+ .appoint-display .product-table td:nth-child(odd) {
+      background-color:rgb(93, 172, 237); 
+    }
+    .appoint-display .product-table td:nth-child(odd):hover {
+      background-color:rgb(180, 183, 185) ;
+    }
+  
+ .appoint-display.table-table-bordered{
+     margin-top: 5rem;
+     width: 80%;
+     margin-left:9rem;
+     text-align: center;
+     border-radius: 1rem;
+   
+  }
+  
+  
+ .appoint-display .table-table-bordered th{
+     width:49rem;
+     padding:2rem;
+     font-size: 2.2rem;
+     color:rgb(0, 0, 0);
+     font-style: bold;
+    
+     
+  }
+  
+ .appoint-display .table-table-bordered td{
+     padding:1rem;
+     font-size: 2.5rem;
+     color:whitesmoke;
+     font-style: bold;
+  }
+ 
+ 
+ /*--------------------------------------------------------------------------------------------------------------------------------------*/
+ 
+ 
+ .dashboard .heading
+ {
+    color: rgb(255, 255, 255);
+ }
+ 
+ .dashboard .box-container{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+     gap:1.5rem;
+  }
+  .dashboard .box-container .box:hover{
+     outline: var(--outline-hover);
+     outline-offset: 1rem;
+     color: black;
+     outline-width:.7rem;
+  }
+  
+  .dashboard .box-container .box{
+     padding:3rem 2rem;
+     border-radius: 1rem;
+     background:#fffffff0;
+     outline:rgb(255, 145, 0);
+     outline-offset: -1rem;
+     text-align: center;
+     box-shadow: rgb(255, 0, 0);
+  }
+  
+  .dashboard .box-container .box h3{
+     font-size: 3.9rem;
+     line-height: 1.8;
+     color:rgb(0, 0, 0);
+  }
+  
+  .dashboard .box-container .box p{
+     font-size: 2.1rem;
+     line-height: 1.8;
+     color:rgb(0, 0, 0);
+     padding:1rem 0;
+  }
+ 
+ @media (max-width:991px){
+ 
+    html{
+       font-size: 55%;
+    }
+ 
+ }
+ 
+ @media (max-width:768px){
+ 
+    .product-display{
+       overflow-y:scroll;
+    }
+ 
+    .product-display .product-display-table{
+       width: 80rem;
+    }
+ 
+ }
+ 
+ @media (max-width:450px){
+ 
+    html{
+       font-size: 50%;
+    }
+ 
+ }
+ 
+ @keyframes change{
+     0%
+     {
+         background-image: url(image/wedding2.jpg);
+     }
+     30%
+     {
+         background-image: url(image/wedding3.jpg);
+     }
+     60%
+     {
+         background-image: url(image/wedding4.jpg);
+     }
+     90%
+     {
+         background-image: url(image/wedding6.jpg);
+     }
+     120%
+     {
+         background-image: url(image/wedding5.jpg);
+     }
+     140%
+     {
+         background-image: url(image/wedding1.jpg);
+     }
+     
+ }

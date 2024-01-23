@@ -1,0 +1,40 @@
+.bread_top{
+    
+    background-image: url(image/beard1.jpg);
+    background-position: 30%;
+    background-repeat: no-repeat;
+    background-size:100%;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s infinite ease-in-out;
+}
+
+
+
+@keyframes change{
+    0%
+    {
+        background-image: url(image/beard1.jpg);
+    }
+    30%
+    {
+        background-image: url(image/beard2.jpg);
+    }
+    60%
+    {
+        background-image: url(image/beard3.jpg);
+    }
+    90%
+    {
+        background-image: url(image/beard4.jpg);
+    }
+    120%
+    {
+        background-image: url(image/beard5.jpg);
+    }
+    140%
+    {
+        background-image: url(image/tatto4.png);
+    }
+    
+}
